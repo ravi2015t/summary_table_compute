@@ -1,0 +1,16 @@
+[package]
+name = "pension_calcs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+datafusion = "28"
+tokio = "1.0"
+log = "0.4"
+env_logger = "0.9"
+
+[profile.profiling]
+inherits = "release"
+debug = true
